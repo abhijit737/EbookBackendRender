@@ -1,4 +1,4 @@
-FROM maven:2.7.0-openjdk-11 As build
+FROM maven:3.9.1-openjdk:11-jdk-slim-sid As build
 COPY . .
 RUN mvn clean package -DskipTests
 
